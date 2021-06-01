@@ -1,5 +1,4 @@
-
-//ф-цию getRandomIntInclusive нашла на developer.mozilla.org, условия сама дописала
+//ф-цию getRandomIntInclusive нашла на MDN, условия сама дописала
 /**
  * Возвращаем случайное целое число из переданного диапазона включительно
  *
@@ -7,10 +6,8 @@
  * @param {number} max – максимальное число в диапазоне
  * @returns {number}
  */
-
-let result;
-
 function getRandomIntInclusive(min, max) {
+  let result;
   //если какое-то из чисел < 0, поменяем его на положительное
   if (min < max) {
     min = Math.ceil(Math.abs(min));
@@ -38,11 +35,7 @@ getRandomIntInclusive(3, -47.8);
  */
 
 function checkMaxLength(stringLength, maxLength) {
-  if (stringLength <= maxLength) {
-    return true;
-  } else {
-    return false;
-  }
+  return stringLength <= maxLength;
 }
 
 checkMaxLength(34, 60);
