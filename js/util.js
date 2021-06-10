@@ -41,4 +41,11 @@ function checkMaxLength(stringLength, maxLength) {
 
 checkMaxLength(34, 60);
 
-export {getRandomIntInclusive};
+/**
+ * Берем из массива случайный элемент и тут же удаляем его из массива
+ *
+ * @param {object} array - массив
+ */
+const getRandomElementFromArray = (array) => array.splice(getRandomIntInclusive(0, array.length-1), 1);
+
+export {getRandomIntInclusive, getRandomElementFromArray};
