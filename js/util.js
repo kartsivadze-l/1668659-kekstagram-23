@@ -25,8 +25,6 @@ function getRandomIntInclusive(min, max) {
   return result;
 }
 
-getRandomIntInclusive(3, -47.8);
-
 /**
  * Проверяем максимальную длину строки
  *
@@ -34,12 +32,9 @@ getRandomIntInclusive(3, -47.8);
  * @param {number} maxLength – максимальная длина
  * @returns {boolean}
  */
-
 function checkMaxLength(stringLength, maxLength) {
   return stringLength <= maxLength;
 }
-
-checkMaxLength(34, 60);
 
 /**
  * Берем из массива случайный элемент и тут же удаляем его из массива
@@ -48,4 +43,4 @@ checkMaxLength(34, 60);
  */
 const getRandomElementFromArray = (array) => array.splice(getRandomIntInclusive(0, array.length-1), 1);
 
-export {getRandomIntInclusive, getRandomElementFromArray};
+export {checkMaxLength, getRandomIntInclusive, getRandomElementFromArray};
