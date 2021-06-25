@@ -1,3 +1,5 @@
+const isEscEvent = (evt) => evt.key === 'Escape' || evt.key === 'Esc';
+
 //ф-цию getRandomIntInclusive нашла на MDN, условия сама дописала
 /**
  * Возвращаем случайное целое число из переданного диапазона включительно
@@ -6,7 +8,6 @@
  * @param {number} max – максимальное число в диапазоне
  * @returns {number}
  */
-
 function getRandomIntInclusive(min, max) {
   let result;
   //если какое-то из чисел < 0, поменяем его на положительное
@@ -43,4 +44,4 @@ function checkMaxLength(stringLength, maxLength) {
  */
 const getRandomElementFromArray = (array) => array.splice(getRandomIntInclusive(0, array.length-1), 1);
 
-export {checkMaxLength, getRandomIntInclusive, getRandomElementFromArray};
+export {checkMaxLength, getRandomIntInclusive, getRandomElementFromArray, isEscEvent};

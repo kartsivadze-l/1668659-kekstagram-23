@@ -48,7 +48,7 @@ const createComments = () => {
  *
  * @returns {object}
  */
-const createPhotoDescription = () => {
+const createPhotoData = () => {
   let  id = getRandomElementFromArray(ids);
   id = id[0];
   return {
@@ -60,4 +60,4 @@ const createPhotoDescription = () => {
   };
 };
 
-export {createPhotoDescription};
+export {createPhotoData};
